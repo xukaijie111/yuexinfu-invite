@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "defaultTitle": "悦心付",
+    "titleBarColor": "#323239"
+  }
+}

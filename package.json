@@ -1,0 +1,21 @@
+{
+  "name": "yuexinfu",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "mor compile --watch",
+    "compile": "mor compile --production"
+  },
+  "keywords": [],
+  "author": "xukaijie2022@126.com <xukaijie2022@126.com>",
+  "license": "",
+  "dependencies": {
+    "@mini-types/alipay": "^3.0.14",
+    "@morjs/core": "*",
+    "@types/qs": "^6.9.17",
+    "qs": "^6.13.1"
+  },
+  "devDependencies": {
+    "@morjs/cli": "*"
+  }
+}
