@@ -19,7 +19,7 @@
             class="input-item" value="{{form.phone}}"   placeholder="请输入您的手机号" type = "number" maxlength = "11"></input>
               
             <view class="input-container input-item">
-                <text>经营行业：</text>
+                <text>经营行业</text>
                 <picker mode="selector" 
                 range-key = "name"
                 range="{{businessTypes}}" value="{{businessTypeIndex}}" onChange="onBusinessTypeChange">
@@ -31,7 +31,7 @@
 
 
             <view class="input-container input-item">
-                <text >门店数：</text>
+                <text >门店数</text>
                 <picker mode="selector" 
                 range-key = "name"
                 range="{{storeNumRanges}}" value="{{storeNumRangeIndex}}" onChange="onStoreNumRangeChange">
