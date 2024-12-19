@@ -42,9 +42,9 @@ aPage({
             }
         ],
 
-        businessTypeIndex:"",
+        businessTypeIndex:null,
 
-        storeNumRangeIndex:"",
+        storeNumRangeIndex:null,
 
         storeNumRanges:[
             
@@ -129,13 +129,13 @@ aPage({
                 type:"none"
             })
         }
-        if (!businessTypeIndex) {
+        if (businessTypeIndex ===null) {
             return my.showToast({
                 content:"请选择行业",
                 type:"none"
             })
         }
-        if (!storeNumRangeIndex) {
+        if (!storeNumRangeIndex === null) {
             return my.showToast({
                 content:"请选择门店数量",
                 type:"none"
