@@ -2,6 +2,50 @@
 
 <view class = "w-full h-full submit-wrap">
 
-    <view class = "title-wrap"></view>
+    <view class = "title-wrap">
+        <view>我是商家, 申请入驻</view>
+        <image src = "/assets/logo.png" class = "logo"/>
+    </view>
+
+    <view class = "form-wrap">
+        <view class = "title">留下您的联系方式，我们马上联系您</view>
+
+        <view>
+            <input class="input-item" value="{{form.name}}"   
+            onInput = "onInputName"
+            placeholder="请输入您的姓名" ></input>
+            <input 
+             onInput = "onInputPhone"
+            class="input-item" value="{{form.phone}}"   placeholder="请输入您的手机号" type = "number" maxlength = "11"></input>
+              
+            <view class="input-container input-item">
+                <text>经营行业：</text>
+                <picker mode="selector" 
+                range-key = "name"
+                range="{{businessTypes}}" value="{{businessTypeIndex}}" onChange="onBusinessTypeChange">
+                    <view class="picker">
+                    {{businessTypes[businessTypeIndex] ? businessTypes[businessTypeIndex].name : "请选择经营行业"}}
+                    </view>
+                </picker>
+            </view>
+
+
+            <view class="input-container input-item">
+                <text >门店数：</text>
+                <picker mode="selector" 
+                range-key = "name"
+                range="{{storeNumRanges}}" value="{{storeNumRangeIndex}}" onChange="onStoreNumRangeChange">
+                    <view class="picker">
+                    {{storeNumRanges[storeNumRangeIndex] ? storeNumRanges[storeNumRangeIndex].name : "请选择经营门店数量"}}
+                    </view>
+                </picker>
+            </view>
+
+
+             <button type="primary" class = "btn" onTap = "onSubmit">提交</button>    
+         </view>
+          
+
+    </view>
 
 </view>

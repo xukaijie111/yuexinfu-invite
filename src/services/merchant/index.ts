@@ -1,7 +1,7 @@
 
 import {
     reuqestService,
-} from "@services/index"
+} from "../request/index"
 import _ from "@src/common/lodash"
 
 

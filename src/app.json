@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+     "pages/submit-invite/index"
   ],
   "window": {
     "defaultTitle": "悦心付",
