@@ -16,7 +16,8 @@ export default defineConfig([
     target: 'alipay',
     compileType: 'miniprogram',
     alias:commonAlias,
-    compileMode: 'bundle'
+    compileMode: 'bundle',
+    copy:["src/ext.json"]
   },
   
   

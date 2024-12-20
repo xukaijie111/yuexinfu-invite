@@ -9,10 +9,10 @@ import {
 
 } from "@services/data/index"
 
-
 import {
-    BASE_URL
-} from "@src/common/const"
+    helperService,
+} from "../helper"
+
 
 
 
@@ -139,7 +139,7 @@ export class ReuqestService {
         params.headers = headers;
 
 
-        let baseUrl = BASE_URL;
+        let baseUrl = helperService.getBaseUrl();
 
         url = `${baseUrl}${url}`;
         if (!isEmpty(query)) {

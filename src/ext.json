@@ -1,0 +1,8 @@
+{
+
+    "extEnable": true,
+    "ext": {
+        "appName":"悦心付",
+        "baseUrl":"http://api-test.yuexinpay.com"
+    }
+}

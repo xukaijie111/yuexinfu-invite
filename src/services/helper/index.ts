@@ -23,11 +23,21 @@ export type IOpenLocParams = {
 
 export class HelperService {
 
-
+    extSyncConifg: any
     getSystemInfoSync() {
         return my.getSystemInfoSync();
     }
 
+
+    getExtConfigSync(): Record<any, any> {
+        if (this.extSyncConifg) return this.extSyncConifg
+        console.log(`ext config is`, my.getExtConfigSync())
+        return (this.extSyncConifg = my.getExtConfigSync()) || {}
+    }
+
+    getBaseUrl() {
+        return this.getExtConfigSync().baseUrl;
+    }
    
 
     getAppid() {
