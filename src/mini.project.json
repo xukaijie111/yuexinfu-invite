@@ -4,5 +4,6 @@
   "component2": true,
   "axmlStrictCheck": true,
   "enableAppxNg": true,
-  "enableHMR": true
+  "enableHMR": true,
+  "uploadExclude":["ext.json"]
 }
