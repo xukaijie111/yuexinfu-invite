@@ -1,7 +1,7 @@
 
 <view class = "w-full h-full wrap">
 
-  <image class="bg" src="/assets/bg.png" mode="widthFix" />
+  <image class="bg" src="https://static.yuexinpay.com/mini/invest_background.jpg" mode="widthFix" />
     
    <button type="primary" class = "btn color-5D3EF5" onTap = "onSubmit">申请入驻</button>    
 </view>
